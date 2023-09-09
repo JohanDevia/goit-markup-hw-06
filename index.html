@@ -483,7 +483,14 @@
               class="bg-suscription"
               placeholder="Correo electrónico"
             />
-            <button type="submit" class="button-suscription">Suscríbase</button>
+            <button type="submit" class="button-suscription">
+              Suscríbase
+              <svg class="send-icon">
+                <use
+                  href="./images/images-hw-6/svg/send-icon.svg#send-icon"
+                ></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -496,6 +503,45 @@
               <use href="./images/images-hw-5/x-close.svg#icon-close"></use>
             </svg>
           </button>
+        </div>
+        <h3 class="header-modal">
+          Deje sus datos, nos contactaremos con usted
+        </h3>
+        <div class="input-container">
+          <form action="#" class="contact-form">
+            <label class="label-form" for="name-modal">Nombre</label>
+            <input
+              type="text"
+              id="name-modal"
+              name="full-name"
+              placeholder="icono"
+              class="input-box"
+            />
+            <label class="label-form" for="phone-modal">Teléfono</label>
+            <input
+              type="number"
+              id="phone-modal"
+              name="phone"
+              placeholder="icono"
+              class="input-box"
+            />
+            <label class="label-form" for="email-modal">E-mail</label>
+            <input
+              type="email"
+              id="email-modal"
+              name="email"
+              placeholder="icono"
+              class="input-box"
+            />
+            <label class="label-form" for="comments-modal">Comentarios</label>
+            <textarea
+              class="input-box__comments"
+              id="comments-modal"
+              name="comments"
+              placeholder="Introduzca el texto"
+              rows="5"
+            ></textarea>
+          </form>
         </div>
       </div>
     </div>
