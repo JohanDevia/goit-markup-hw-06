@@ -510,28 +510,43 @@
         <div class="input-container">
           <form action="#" class="contact-form">
             <label class="label-form" for="name-modal">Nombre</label>
+            <svg class="icon-form icon-name">
+              <a href="" class="input-box"></a>
+              <use
+                href="./images/images-hw-6/svg/icon-form/icon-form.svg#icon-person"
+              ></use>
+            </svg>
             <input
               type="text"
               id="name-modal"
               name="full-name"
-              placeholder="icono"
-              class="input-box"
+              class="input-box input-name"
             />
             <label class="label-form" for="phone-modal">Teléfono</label>
+            <svg class="icon-form icon-phone">
+              <a href="" class="input-box"></a>
+              <use
+                href="./images/images-hw-6/svg/icon-form/icon-form.svg#icon-phone"
+              ></use>
+            </svg>
             <input
-              type="number"
+              type="tel"
               id="phone-modal"
               name="phone"
-              placeholder="icono"
-              class="input-box"
+              class="input-box input-phone"
             />
             <label class="label-form" for="email-modal">E-mail</label>
+            <svg class="icon-form icon-email">
+              <a href=""></a>
+              <use
+                href="./images/images-hw-6/svg/icon-form/icon-form.svg#icon-email"
+              ></use>
+            </svg>
             <input
               type="email"
               id="email-modal"
               name="email"
-              placeholder="icono"
-              class="input-box"
+              class="input-box input-email"
             />
             <label class="label-form" for="comments-modal">Comentarios</label>
             <textarea
@@ -541,6 +556,19 @@
               placeholder="Introduzca el texto"
               rows="5"
             ></textarea>
+            <div class="checkbox-contact">
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="checkbox-contact__form"
+                name="checkbox-contact__form"
+              />
+              <label for="checkbox-contact__form" class="label-text"
+                >Estoy de acuerdo con el boletín informativo y acepto los
+                Términos y Condiciones</label
+              >
+            </div>
+            <button class="buttton-submit__form" type="submit">Enviar</button>
           </form>
         </div>
       </div>
