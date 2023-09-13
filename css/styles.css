@@ -608,12 +608,15 @@ svg {
   margin: 12px auto;
   box-sizing: content-box;
 }
+.form-container {
+  position: relative;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
 }
 .label-form {
-  margin-bottom: 4px;
+  margin: 10px 0 4px 0;
   color: #757575;
   font-size: 12px;
   font-weight: 400;
@@ -624,46 +627,25 @@ svg {
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 42px;
+  padding: 11px 11px 11px 42px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input-name:hover,
-.input-phone:hover,
-.input-email:hover {
-  border-radius: 4px;
-  border: 1px solid rgb(33, 150, 243);
-}
-
-/* .input-box:hover .icon-name {
-  color: rgb(33, 150, 243);
-  border-radius: 4px;
-  border: 1px solid rgb(33, 150, 243);
-} */
 .icon-form {
   width: 18px;
   height: 18px;
-  color: rgba(33, 33, 33, 1);
-}
-.icon-name {
+  fill: rgba(33, 33, 33, 1);
   position: absolute;
-  transform: translate(12px, 30px);
-  z-index: 1;
+  bottom: 50%;
+  left: 12px;
+  transform: translateY(50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-phone {
-  position: absolute;
-  transform: translate(12px, 95px);
-  z-index: 1;
+.input-box:focus {
+  outline: none;
+  border: 1px solid rgba(33, 150, 243, 1);
 }
-.icon-email {
-  position: absolute;
-  transform: translate(12px, 165px);
-  z-index: 1;
-}
-.icon-name:hover,
-.icon-phone:hover,
-.icon-email:hover {
-  color: rgba(33, 150, 243, 1);
+.input-box:focus + .icon-form {
+  fill: rgba(33, 150, 243, 1);
 }
 .input-box__comments {
   width: 448px;
@@ -672,6 +654,11 @@ svg {
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 12px 16px;
   resize: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.input-box__comments:focus {
+  outline: none;
+  border: 1px solid rgba(33, 150, 243, 1);
 }
 .checkbox-contact {
   width: 448px;
