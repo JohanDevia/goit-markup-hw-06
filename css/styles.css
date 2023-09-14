@@ -641,6 +641,12 @@ svg {
   transform: translateY(50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.input-box:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+.input-box:hover + .icon-form {
+  fill: rgba(33, 150, 243, 1);
+}
 .input-box:focus {
   outline: none;
   border: 1px solid rgba(33, 150, 243, 1);
@@ -659,6 +665,9 @@ svg {
 }
 .input-box__comments:focus {
   outline: none;
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+.input-box__comments:hover {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 .checkbox-contact {
@@ -759,6 +768,13 @@ svg {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
+}
+.bg-suscription:hover {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+.bg-suscription:focus {
+  outline: none;
+  border: 1px solid rgba(33, 150, 243, 1);
 }
 .button-suscription {
   width: 200px;
