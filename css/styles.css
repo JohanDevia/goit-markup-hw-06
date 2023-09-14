@@ -768,6 +768,7 @@ svg {
   background: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding-left: 16px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .bg-suscription:hover {
   border: 1px solid rgba(33, 150, 243, 1);
